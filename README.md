@@ -2,25 +2,34 @@
 
 ## Introduction
 
-Created a Repository for learning DSA Concepts and Solutions. I will be updating problems and solutions as i solve them on various platforms. 
-The primary purpose of this repository is to keep track of my progress and the problems that i come across. However, As I progress, I will also be explaining various concepts and how i solve them bby explaining. 
+I have created a repository dedicated to learning Data Structures and Algorithms (DSA). This repository will be regularly updated with problems and their solutions from various platforms. The primary purpose is to track my progress and document the problems I encounter. As I advance, I will also provide detailed explanations of various concepts and my approaches to solving them.
 
-You can find different folders and each one will have its own README.md file explaining the concept. Besides, I have also been learning from various sources including Linkedin Learning, Youtube and write any notes explaining the concepts for which i will be updating references and update the README.md file accordingly.
+The repository is organized into different folders, each containing a `README.md` file that explains the concepts covered within. Additionally, I will include my learning notes and references from various sources, such as LinkedIn Learning and YouTube, to provide comprehensive explanations of the concepts.
 
+You can expect to find:
+
+- **Structured Problem Solutions**: Solutions to DSA problems categorized by topic.
+- **Concept Explanations**: In-depth explanations of DSA concepts in each folder's `README.md`.
+- **Learning Resources**: Notes and references from various educational platforms.
+- **Progress Tracking**: A log of my progress as I work through different problems and concepts.
+
+This repository aims to serve as a valuable resource for anyone interested in learning DSA, offering both practical problem-solving and theoretical knowledge.
+
+Feel free to fork or clone this repository and customise it based on your needs.
 
 ## Problem Solving Approach
-### STEP 1: STATE THE PROBLEM CLEARLY
+### STEP 1: State the problem clearly
 
-### STEP 2: IDENTIFY INPUTS & OUTPUTS, Funtion Signature  
+### STEP 2: Identify Inputs & Outputs, Funtion Signature  
 
-### STEP 3: CREATE TEST CASES & LIST EDGE CASES
+### STEP 3: Create Test Cases & List Edge Cases
 
-### STEP 4: SOLUTION IN PLAIN ENGLISH
+### STEP 4: Solution in plain english
 
-### STEP 5: IMPLEMENT THE SOLUTION (CAN BE BRUTE FORCE)
+### STEP 5: Implement the solution (can be brute force)
 
-### STEP 6: ANALYZE COMPLEXITIES & IDENTIFY INEFFICIENCIES
+### STEP 6: Analyse the complexities & inefficiencies
 
-### FINAL: IMPROVISE THE SOLUTION
+### FINAL: Improvise the solution
 
 ## References
