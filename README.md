@@ -34,4 +34,5 @@ Feel free to fork or clone this repository and customise it based on your needs.
 
 ## References
 - [Data Structures and Algorithms in Python - Full Course for Beginners](https://youtu.be/pkYVOmU3MgA?si=Yt911XLr-p0VUXkV)
+- [HackerRank](https://www.hackerrank.com/)
 <!-- - []()  -->
