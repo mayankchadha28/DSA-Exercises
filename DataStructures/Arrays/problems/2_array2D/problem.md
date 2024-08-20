@@ -6,13 +6,16 @@
 
 Given a 6 X 6 2D Array, arr:
 `
-1 1 1 0 0 0
-0 1 0 0 0 0
-1 1 1 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
+
+1 1 1 0 0 0  
+0 1 0 0 0 0  
+1 1 1 0 0 0  
+0 0 0 0 0 0  
+0 0 0 0 0 0  
+0 0 0 0 0 0  
+
 `
+
 An hourglass in A is a subset of values with indices falling in this pattern in 's graphical representation:
 
 `
