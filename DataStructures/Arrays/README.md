@@ -24,3 +24,8 @@ arr = [
     [7,8,9]
     ]
 ```
+## SUB ARRAY
+ - Max sub array - n(n+1)/2
+ 
+ | start | end (start to (end - 1))|
+

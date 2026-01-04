@@ -5,6 +5,13 @@
 // You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 // Link: https://leetcode.com/problems/single-number/description/
+
+// Xor - same element turns 0
+// 0 ^ 1 = 1
+// ! ^ 0 = 1
+// 0 ^ 0 = 0
+// 1 ^ 1 = 0
+
 #include <iostream>
 #include <vector>
 
