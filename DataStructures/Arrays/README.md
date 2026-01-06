@@ -29,3 +29,10 @@ arr = [
  
  | start | end (start to (end - 1))|
 
+
+## KADANE'S ALGORITHM
+(+ve) + (+ve) -> +ve
+-ve + (bigger number) +ve -> +ve
++ve + (bugger number) -ve -> +ve
+
+Adding a large negative value reduces the sum. So instead of carrying forward a negative sum, it is better to reset the sum to zero.
