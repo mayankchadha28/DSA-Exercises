@@ -10,8 +10,11 @@ Time complexity is the number of operations needed to run an algorithm on large 
 - It always considers the worst case scenario.
 - Constants are always neglected
 
+<hr/>
+
 ## Common Complexities
- - O(1) - Constant : It is called as constant time complexity. It means if the number of data changes. The execution time remains the same
+### O(1) - Constant
+  It is called as constant time complexity. It means if the number of data changes. The execution time remains the same
 
  For Example: Left take a function and run it. the function prints 
  ```
@@ -19,13 +22,30 @@ Time complexity is the number of operations needed to run an algorithm on large 
    print("Hello World) 
  
  ```
- This function is run for 10 data or 10 million data, the execution is constant
 
- - O(n) - Linear : Number of operations increases as the input size increases. 
+ or 
+
+```
+int n;
+cin >> n;
+int ans = n(n + 1) / 2;
+```
+
+ This function can run for 10 data or 10 million data, the execution time will be constant
+
+ Also Found in Hash Tables. (TBD)
+
+<hr/>
+
+### O(n) - Linear
+
+Number of operations increases as the input size increases. 
 
  For example: Loop an Array
 
- - O(n <sup>2</sup>) - Quadratic : It is generally worst
+The operation performed inside an array is constant. Constants are not considered but the overall loop takes time and is dependent on the input size.
+
+### O(n <sup>2</sup>) - Quadratic : It is generally worst
 
  For example : Generally found in Nested Loops or Matrix
 
