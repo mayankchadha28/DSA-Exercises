@@ -13,7 +13,7 @@ You may assume that the majority element always exists in the array.
 
 
 #include <iostream>
-// #include <vector>
+#include <vector>
 
 using namespace std;
 

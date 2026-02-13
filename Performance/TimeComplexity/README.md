@@ -45,6 +45,15 @@ Number of operations increases as the input size increases.
 
 The operation performed inside an array is constant. Constants are not considered but the overall loop takes time and is dependent on the input size.
 
+Example
+
+Kadans Algorithm
+
+Moores voting Algorithm
+
+N Factorial
+
+
 ### O(n <sup>2</sup>) - Quadratic : It is generally worst
 
  For example : Generally found in Nested Loops or Matrix
