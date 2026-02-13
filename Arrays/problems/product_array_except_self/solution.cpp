@@ -12,7 +12,6 @@ Add another loop where you multiple all values and exclude when i==j i.e the sam
 return answer
 
 Time Complexity - O(n2)
-
 */
 
 vector<int> productExceptSelf(vector<int>& nums) {
