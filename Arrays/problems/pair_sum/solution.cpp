@@ -49,13 +49,11 @@ vector<int> pairSum(vector<int> nums, int target){
             ans.push_back(end);
 
             return ans;
-
         }
     }
     
     return ans;
 
-    
 }
 
 int main(){

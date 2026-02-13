@@ -1,6 +1,7 @@
 # Binary Search
 
 ## Definition
+It can be thought of like a search in a dictionary.
 
 It is a Searching Algorithm used in a `Sorted Array` to search for a value i.e the target value. It works by checking the value in the center at each iteration and reduces the search by half.
 
@@ -29,7 +30,16 @@ If the taget value is high, search right half
 
 log(n)
 
-more details on complexity updating soon.
+- Each operation search reduced by half = 
+n -> n/2 -> n/4 or n/2<sup>2 .... 1
+
+if K operations 
+1 = n/2<sup>k
+Time Complexity = O(k)
+
+n= 2<sup>K
+log<sub>2 n = k
+
 
 ## Generic Template
 
