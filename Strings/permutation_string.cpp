@@ -48,6 +48,5 @@ bool isFreqSame(int freq1[], int freq2[]){
             }
        }
 
-
         return false;
     }
