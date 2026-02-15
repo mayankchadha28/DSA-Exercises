@@ -12,6 +12,8 @@ Both character & string methods
 st index - 0 
 end index - n-1 as n is null pointer
 
+
+
 */
 void reverseString_char(vector<char>& s) {
     int n = s.size();
