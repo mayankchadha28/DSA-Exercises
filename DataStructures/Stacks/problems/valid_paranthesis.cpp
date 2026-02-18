@@ -1,7 +1,29 @@
+/* 
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+*/
+
+
 #include <iostream>
 
 using namespace std;
 
+
+/* 
+The idea is to use a stack
+insert if its. (, {, [
+if not check with closing brackets. 
+the last opening bracket should be equal to first closing
+if same then pop
+else return false 
+
+*/
 
 bool isValid(string s) {
         int n = s.length();
