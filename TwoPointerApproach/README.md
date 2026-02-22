@@ -4,6 +4,7 @@
 
 - Iterate over a data between two distinct reference points or pointer 
 - It is commonly used in various algorithms.
+- Used where we want to use two points.
 
 ## Example
 
@@ -25,5 +26,9 @@ Result = [4, 3, 2, 1]
 ## Conditions
 - Consider odd and even size of arrays
 - If Start pointer is greater than End pointer then Stop
+
+## Usage
+- Reverse
+- Palindrome
 
 
