@@ -27,6 +27,7 @@ Output: [0,1]
 #include <iostream>
 #include <vector>
 #include <map>
+#include <set>
 
 using namespace std;
 
@@ -38,7 +39,7 @@ Solution 3 - Best
 
 maintain an unordered map for the idx 
 we know that first + second = target
-we know the fiorst, target so based on that search map if not then add to map
+we know the first, target so based on that search map if not then add to map
 
 if found return
 
@@ -64,5 +65,6 @@ if found return
 
         return ans;
     }
+
 
 
