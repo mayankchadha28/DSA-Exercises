@@ -106,6 +106,10 @@ if sum greater then k--;
 else we have our ans when its equal. then we push data to array and then increment pointers
 pointers are incremented to ensure the same value is not added.
     
+Time complexity - sort(nlogn) + n2 (loops)
+O(nlogn + n2)
+
+Space Complexity - O(uniqueTriplets)
 */
 
 vector<vector<int>> threeSum(vector<int>& nums) {
