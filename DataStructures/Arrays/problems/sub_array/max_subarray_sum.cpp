@@ -19,7 +19,6 @@ int main_bruteforce(){
     }
 
     cout << "max subarray sum = " << maxSum << endl;
-
     return 0;
 }
 
