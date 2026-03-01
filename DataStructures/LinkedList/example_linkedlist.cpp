@@ -57,7 +57,7 @@ class List {
                 return;
             }
 
-                Node* temp = head;
+                Node* temp = head; 
                 head = head->next;
                 temp->next = NULL;
 
