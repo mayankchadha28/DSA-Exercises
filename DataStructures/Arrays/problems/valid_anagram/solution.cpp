@@ -86,6 +86,8 @@ NOTE: iterating over a map will give you value as a pair. you must access via m.
 
 bool isAnagram(string s, string t) {
 
+     if(s.size() != t.size()) return false; //edge case & optimization
+
         unordered_map<char, int> m1;
 
         for(int i=0; i < s.size(); i++){

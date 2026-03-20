@@ -34,7 +34,10 @@ using namespace std;
 /* 
 
 Solution 1 - Bruteforce - O(n2)
-Solution 2 - Better - 2 pointer approach
+Solution 2 - Better - 2 pointer approach - store as pair <val, idx> loop once. 
+
+then sort the array. then use the 2 pointer aproach to find the value
+
 Solution 3 - Best 
 
 maintain an unordered map for the idx 
