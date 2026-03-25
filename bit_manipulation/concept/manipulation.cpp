@@ -1,9 +1,5 @@
 #include <iostream>
 
-
-
-
-
 /* 
 Update Bit
 
@@ -54,6 +50,8 @@ int setBit(int n, int pos){
 /* 
 use left shift and check with & 
 if the value has 0 then it will return 0 if it has 1 then 1
+
+you can use right shift too if if want to verfiy if the bit at pos is set or not
 */
 int getBit(int n, int pos){
     return (n & (1<<pos)!=0);

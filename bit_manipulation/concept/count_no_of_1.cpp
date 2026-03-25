@@ -16,3 +16,23 @@ int numberofones(int n){
 
     return count;
 }
+
+
+/* 
+Brute force
+*/
+
+int count_bits(int n){
+    int count = 0;
+
+    while(n < 1){
+        // checking for odd
+        if(n % 2 == 0) count++;
+
+        n= n/2;
+    }
+
+    if(n == 1) count++;
+
+    return count;
+}
