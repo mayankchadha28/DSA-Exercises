@@ -6,7 +6,7 @@ using namespace std;
 
 
 /* 
-Space complexity - O(2)
+Space complexity - O(2n)
 Time 
 */
 class MinStack {
