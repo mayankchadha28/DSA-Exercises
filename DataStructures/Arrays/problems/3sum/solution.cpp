@@ -52,7 +52,8 @@ vector<vector<int>> threeSum_bruteforce(vector<int>& nums) {
 
 /* 
 we know that a+b+c =0 (target)
-b + c = -a (target)
+c = -(a+b)
+a selected on 1st loop so b+c = -a(target)
 we loop through a and set the value of a
 then c = target - b
 
