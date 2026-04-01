@@ -1,6 +1,19 @@
 #include <iostream>
 #include <vector>
 
+
+
+/* 
+we can create an instance of an object with 
+Node* newNode = new Node(5) - this creates dynamically
+
+or Node newNode(5); 
+this creates static whrn the function ends the instance is deleted but we want it to live beyond that
+
+
+
+*/
+
 using namespace std;
 
 class Node {

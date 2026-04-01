@@ -5,3 +5,4 @@ a.out
 *.out
 progress/
 main
+**/practice
