@@ -2,7 +2,7 @@
 
 using namespace std;
 
-
+/* need the col index when passing array */
 bool linear_search(int matrix[][3], int rows, int cols, int key){
     for(int i=0; i<rows; i++){
         for(int j=0; i<cols; j++){

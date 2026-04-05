@@ -18,6 +18,13 @@ int main(){
     // Accessing an element
     cout << matrix[2][1] << endl;
 
+    /* Input */
+    for(int i=0; i< rows; i++){
+        for(int j=0; j<cols; j++){
+            cin >> matrix[i][j];
+        }
+    }
+
     /* 
     output all elements in a matrix
     */
