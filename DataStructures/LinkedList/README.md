@@ -2,6 +2,8 @@
 
 A linear data structure where each **node** holds a value and a pointer to the next node.
 
+The first step in linked list is to preserve the address of next node. this is to avoid loosing the address.
+
 ```
 Head
   │
