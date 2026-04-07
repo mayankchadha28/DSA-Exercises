@@ -8,6 +8,12 @@ next
 
 and update its connections
 
+Initialize
+prev = NULL
+curr = head
+next = NULL
+
+
 */
 
 

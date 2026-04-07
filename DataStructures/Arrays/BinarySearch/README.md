@@ -18,6 +18,13 @@ If the taget value is high, search right half
 3. Loop between the steps 1 and 2 until value is found.
 4. Return the value. if not found return -1 or false
 
+## Optimization
+
+We calculate ```mid = (st+end)/2```
+but the problem is if int st is `INT_MAX` & end is also `INT_MAX` out variable will overflow and crash (for large values)
+to solve this instead of adding directly we do ```st+(end-st)/2 ``` which is the same.
+
+
 
 ## Conditions
 - Array must always be sorted
