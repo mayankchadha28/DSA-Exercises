@@ -28,7 +28,7 @@ using namespace std;
 
 /* 
 
-Idea is to use 2 pointer approach to check values if they are different deligate to a secondary to check if st++ or end-- if we continue its still valid. 
+Idea is to use 2 pointer approach to check values. if they are different deligate to a secondary to check if st++ or end-- if we continue its still valid. 
 
 if not return
 
