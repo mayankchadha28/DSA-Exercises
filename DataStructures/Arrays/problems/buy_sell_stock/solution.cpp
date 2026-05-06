@@ -19,15 +19,31 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 using namespace std;
 
 
+/* 
+Consider each day as selling point; preferably sell if user buy at minimum and sell when the price is high
 
+on day 1 it cannot be sold so minBuy will be day 1 valk
+day 2 if we sell it may or may not yeirl profit. it if is then calculate profit
 
-int maxProfit_bruteforce(vector<int>& prices){
-    
-}
+check for minimum if the value can be next minimum
 
+Time Complexity - O(n)
 
-int maxProfit_bruteforce(vector<int>& prices){
+*/
 
+int maxProfit(vector<int>& prices){
+    int minBuy = prices[0], maxProfit = 0;
+
+        for(int i=1; i< prices.size(); i++){
+
+            if(prices[i] > minBuy){
+                maxProfit = max(maxProfit, prices[i]-minBuy);
+            }
+
+            minBuy = min(minBuy, prices[i]);
+        }
+
+        return maxProfit;
 }
 
 
