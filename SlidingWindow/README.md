@@ -1,6 +1,6 @@
 # Sliding Window
 
-Sequential iteration over **contiguous** elements — strings, arrays, linked lists.
+Sequential iteration over **contiguous** elements (grouped together) — strings, arrays, linked lists.
 
 ## Question Types
 
@@ -10,12 +10,13 @@ Sequential iteration over **contiguous** elements — strings, arrays, linked li
 
 ### Fixed Length
 Window size K stays constant.
-> Max sum subarray of size K
+> Eg: Max sum subarray of size K
 
-### Dynamic Length
+### Dynamic Length (Like a caterpillar)
 Expand right pointer, shrink left pointer.
-> Smallest sum ≥ S
+> Eg: Smallest sum ≥ value
 
 ### Dynamic + Auxiliary Structure
 Hashmap/hashset to track frequency while window grows/shrinks.
 > Longest substring with ≤ K distinct chars · String permutation check
+> String purmutations
