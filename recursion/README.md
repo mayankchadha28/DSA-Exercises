@@ -51,6 +51,15 @@ TC = (no. of calls) × (work per call) = n × k = O(n)
 
 ---
 
+## Applications
+
+- Graphs, 
+- Trees
+
+Note: Any problem that can be solved by loops can be solved by recursions. but some problems are more intuitive in recursion and vise versa.
+
+---
+
 ## Space Complexity
 
 ```
