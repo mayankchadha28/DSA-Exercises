@@ -81,55 +81,60 @@ int majority_element_optimized(vector<int>& nums){
 }
 
 /*
-Time Complexity (n)
+Boyer-Moore Voting Algorithm — O(n) time, O(1) space
 
-This is the highly optimized solution based on Moores voting algorithm
-consider if a candidate has lost in 3 cities but if the candidate has won 
-in major cities he will still be the highest
+Problem: find the element that appears more than n/2 times (the "majority
+element"), if one exists.
 
-set initial frequency as 0
+Core idea: think of it like a tug-of-war/cancellation game.
+- Pair up a "vote" for the current candidate with a "vote" against it
+  (i.e., an occurrence of some other number). Each such pair cancels out.
+- Because the majority element occurs more than n/2 times, it has more
+  votes than everything else combined — so no matter how the cancellations
+  happen, it can never be fully cancelled out. It always survives as the
+  last candidate standing.
 
-if the frequency is 0 set the answer 
-
-increment(increase the power) if the solution is found and if not decrement(decrease the power)
-
-to stay in the majority of the elements it will anyways be more than half (n/2) 
-so freq will always be greater than 0
+Phase 1: find a CANDIDATE (not guaranteed to be the actual majority yet)
+Phase 2: verify the candidate actually occurs > n/2 times
 */
 
 int majority_element(vector<int> nums){
-    int freq =0, ans = 0;
+    int freq = 0, ans = 0;
 
-    for(int i=0; i< nums.size(); i++){
+    // ---- Phase 1: find a candidate ----
+    for(int i = 0; i < nums.size(); i++){
+        // freq == 0 means our current candidate has been fully "cancelled
+        // out" by other elements so far — pick a fresh candidate: nums[i]
         if(freq == 0){
             ans = nums[i];
         }
 
+        // nums[i] agrees with our candidate -> add a vote
+        // nums[i] disagrees -> cancel one vote against it
         if(ans == nums[i]){
             freq++;
         }else{
             freq--;
         }
     }
+    // At this point, `ans` is only a CANDIDATE. If a true majority element
+    // exists, this loop is guaranteed to find it. But if no element
+    // actually has count > n/2, `ans` could be some random wrong value —
+    // that's why we verify below.
 
-    // if its not given that the answer will; exist or not
-    //  there can be no elements that are matching
-
+    // ---- Phase 2: verify the candidate really is the majority ----
+    // (skip this phase if the problem guarantees a majority element exists)
     int count = 0;
-    for(int val: nums){
+    for(int val : nums){
         if(val == ans){
             count++;
         }
     }
 
     if (count > nums.size() / 2)
-        return ans;
+        return ans;   // confirmed majority element
     else
-        return -1;
-
-
-    return ans;
-
+        return -1;    // no majority element exists
 }
 
 int main(){

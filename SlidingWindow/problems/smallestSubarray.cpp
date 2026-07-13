@@ -23,8 +23,6 @@ int smallestSubarray(int arr[], int size, int target){
 
             windowStart++;
 
-
-
         }
 
 
