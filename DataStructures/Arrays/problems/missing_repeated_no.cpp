@@ -66,3 +66,30 @@ vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
         return ans;
 
     }
+
+
+    // alternate
+
+    vector<int> findMissingAndRepeatedValues_alternate(vector<vector<int>>& grid) {
+        
+        unordered_map<int, int> freq_map;
+        vector<int> ans(2, 0);
+        int n = grid.size();
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<grid[i].size(); j++){
+                int curr_val = grid[i][j];
+                freq_map[curr_val]++;
+            }
+        }
+
+        for(int i=1; i<= n * n; i++){
+            if(freq_map.find(i) == freq_map.end()){
+                ans[1] = i;
+            }else if(freq_map[i] > 1) {
+                ans[0] = i;
+            }
+        }
+
+        return ans;
+    }

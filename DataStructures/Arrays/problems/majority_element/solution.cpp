@@ -96,6 +96,8 @@ Core idea: think of it like a tug-of-war/cancellation game.
 
 Phase 1: find a CANDIDATE (not guaranteed to be the actual majority yet)
 Phase 2: verify the candidate actually occurs > n/2 times
+
+
 */
 
 int majority_element(vector<int> nums){
@@ -136,6 +138,33 @@ int majority_element(vector<int> nums){
     else
         return -1;    // no majority element exists
 }
+
+
+// Alternate solution
+// Time complexity O(n)
+// Space complexity - O(n)
+
+int majorityElement(vector<int>& nums) {
+        
+    unordered_map<int, int> freq;
+
+    int maj_elem = nums[0];
+    int max_count = 0;
+    for(int n: nums){
+        freq[n]++;
+    }
+
+    for(auto& it: freq){
+        if(it.second > max_count){
+            maj_elem = it.first;
+            max_count = it.second;
+        }
+    }
+
+    return maj_elem;
+
+}
+
 
 int main(){
     vector<int> nums = {2,2, 1,1, 1, 2, 2};
